@@ -1,0 +1,21 @@
+{
+  "name": "eslint-plugin-stateless-variable",
+  "version": "1.0.0",
+  "description": "Enforce root-level variables to be const and objects/arrays to be frozen",
+  "main": "lib/index.js",
+  "keywords": [
+    "eslint",
+    "eslintplugin"
+  ],
+  "files": [
+    "lib/"
+  ],
+  "author": "Jason Han",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.0.0"
+  }
+}
