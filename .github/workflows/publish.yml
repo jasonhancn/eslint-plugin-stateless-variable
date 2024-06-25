@@ -22,6 +22,8 @@ jobs:
         cache: 'yarn'
 
     - name: Publish to npm
-      run: yarn publish --non-interactive
+      run: |
+        echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+        yarn publish --non-interactive
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
